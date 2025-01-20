@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive nav bar using Bootstrap 4</title>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .vertical-line {
+            position: absolute;
+            top: 56px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: calc(100vh - 56px);
+            background-color: rgb(253, 253, 253);
+            margin-top: 70px;
+            z-index: -100;
+        }
+
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        img {
+            opacity: 0.5;
+            max-width: 100%;
+            max-height: fit-content;
+            position: fixed;
+            z-index: -1000;
+        }
+        navbar{
+            background-color: aqua;
+        }
+        .Circle{
+            color: #fff3f3;
+            background-color: #00000000;
+            width: 100%;
+            height: 100vh;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+
+            ;
+
+        }
+        .Circle1{
+            background-color: #3640f9;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-top: 130px;
+
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
+        <!-- Left Brand -->
+        <a class="navbar-brand text-light font-weight-bold" href="#">LOGO</a>
+
+        <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="nav">
+            <!-- Centered Links -->
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-bold px-3" href="#">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-light font-weight-bold px-3 dropdown-toggle" href="#" data-toggle="dropdown">CATEGORIES</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Blog Post</a>
+                        <a class="dropdown-item" href="#">Courses</a>
+                        <a class="dropdown-item" href="#">EBooks</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-bold px-3" href="#">ABOUT US</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link text-light font-weight-bold px-3" href="#">LOGIN</a>
+                </li> -->
+            </ul>
+        </div>
+
+        <!-- Right Brand -->
+        <a class="navbar-brand text-light font-weight-bold" href="profile.html">Profile</a>
+    </nav>
+
+    <img src="gotei.jpg" alt="">
+
+    <div class="vertical-line "></div>
+    <div class="Circle">
+        <div class="Circle1"></div>
+    </div>
+</body>
+
+</html>
